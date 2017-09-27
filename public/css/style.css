@@ -30,4 +30,5 @@ ul > li:hover{
     cursor: pointer;
     color: #fff;
     text-decoration: none;
+    width:200px;
 }
