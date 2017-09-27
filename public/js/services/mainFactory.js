@@ -1,7 +1,7 @@
 
 app.factory('contactsFactory', function($http){
-
-var contacts = [
+var contactsFactory = {
+ contacts: [
           {
               id:1,
               name: "Friends",
@@ -29,9 +29,7 @@ var contacts = [
           },
           {id: 8, name: "Ori", type: "Contact"},
       ]
-
-
-return {
-  contacts:contacts
 }
+
+return contactsFactory;
 });
