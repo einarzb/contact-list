@@ -7,11 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Einar Barzilay",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.6",
     "bootstrap": "^3.3.7",
     "express": "^4.15.5"
-  }
+  },
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/einarzb/trainologic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/einarzb/trainologic/issues"
+  },
+  "homepage": "https://github.com/einarzb/trainologic#readme"
 }
