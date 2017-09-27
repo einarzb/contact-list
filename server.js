@@ -31,5 +31,5 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(port, function() {
-  console.log("Trainologic task rockenroll on " + port + "/nSEARCH NO MORE - I'm You're Developer")
+  console.log("server listens on port: " + port + " SEARCH NO MORE - I'm You're Developer")
 });
