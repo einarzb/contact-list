@@ -8,18 +8,28 @@
     <link rel="icon" href="http://trainologic.com/wp-content/uploads/2017/02/cropped-trainologic-fav-32x32.png" sizes="32x32" />
   </head>
   <body ng-controller="mainController">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 contact">
-          <h1>Contact Tree</h1>
-          <ul>
-            <li ng-repeat="contact in contacts">{{contact.name}}</li>
-          </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 contact">
+              <h1>Contact Tree</h1>
+              <ul>
+                  <li ng-repeat="contact in contacts">
+                      <a class="expandList">{{contact.name}}</a>
+                      <ul>
+                          <li ng-repeat="secondLevel in contact.contacts">
+                              <a class="expandList">{{secondLevel.name}}</a>
+                              <ul>
+                                  <li ng-repeat="thirdLevel in secondLevel.contacts">
+                                      <a class="expandList">{{thirdLevel.name}}</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
-
     <!-- scripts -->
      <script src="angular/angular.js"></script>
      <script src="jquery/dist/jquery.min.js"></script>
